@@ -15,7 +15,7 @@ pipeline{
         }
         stage('Deploy'){
             steps{
-                sh 'sudo cp /home/ec2-user/workspace/multibranch-project/target/MyWebApp-development.war /opt/tomcat/webapps'
+                sh 'sudo cp /home/ec2-user/workspace/multibranch-job_development/target/MyWebApp-development.war /opt/tomcat/webapps'
             }
          }
     }
