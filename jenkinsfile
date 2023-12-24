@@ -1,11 +1,6 @@
 pipeline{
     agent {label 'tomcat'}
-    stages{
-       stage('Git Checkout Stage'){
-            steps{
-                git branch: 'main', url: 'https://github.com/ChetanaMJyothi/multibranch-project.git'
-            }
-         }        
+    stages{      
        stage('Build Stage'){
             steps{
                 sh 'mvn clean install'
